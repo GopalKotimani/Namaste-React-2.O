@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { USER_AVATAR } from '../utils/constants';
+import { BG_URL, USER_AVATAR } from '../utils/constants';
 const Login = () => {
     const [isSignInform, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
@@ -80,7 +80,7 @@ const Login = () => {
                 <Header />
             </div>
             <div className='absolute'>
-                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/9390f6f6-cf80-4bc9-8981-8c2cc8adf98a/web/IN-en-20250421-TRIFECTA-perspective_dc5bcfdf-88a5-4972-8ffe-b28ff942f76e_large.jpg"
+                <img src={BG_URL}
                     alt="Logo" />
             </div>
             <form onSubmit={(e) => e.preventDefault()} className='absolute p-12 bg-black w-3/12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80'>

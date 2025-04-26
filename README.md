@@ -32,6 +32,12 @@
 - Build Movie list
 - TMDB Image CDN URL 
 - Made the Browse page amazing with Tailwind css  
+- usePopularMovies custome hook 
+- GPT Search Page 
+- GPT Search Bar
+- Supporting Multi-languages  
+
+
 
 
 

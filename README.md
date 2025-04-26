@@ -27,6 +27,12 @@
 - Fethc Data for Trailer Video Data 
 - Embedded the Youtube video and make it autoplay and mute 
 - Tailwind classess to make Main container awesome 
+- Build secondary Component 
+- Build movie card 
+- Build Movie list
+- TMDB Image CDN URL 
+- Made the Browse page amazing with Tailwind css  
+
 
 
 # Features

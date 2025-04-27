@@ -5,7 +5,7 @@ export const USER_AVATAR = "https://cdn-icons-png.flaticon.com/512/5951/5951752.
 export const API_OPTIONS = {
     method: 'GET',
     headers: {
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYTQ4ZmViNGIwNjIzZDNkZmMyY2JiNDFiNzVmZTMzOCIsIm5iZiI6MTc0NTU4Mjc0MS41NTMsInN1YiI6IjY4MGI3YTk1ZTkyZjk0MGNhNjlkNTE2OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oUOxtXpl6tjU455pGbDBVrbjf5-3ze9d8Hz1UZHbSCk',
+        Authorization: 'Bearer '+ process.env.REACT_APP_TMDB_KEY,
         accept: 'application/json'
     },
 };
@@ -19,3 +19,5 @@ export const SUPPORTED_LANGUAGES = [
     { identifier: "hindi", name:"Hindi"},
     { identifier: "kannada", name:"Kannada"}
 ]
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
